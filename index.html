@@ -62,6 +62,23 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugin
 .wp-block-site-title a:where(:not(.wp-element-button)){text-decoration: none;}
 .wp-block-site-title a:where(:not(.wp-element-button)):hover{text-decoration: underline;}
 </style>
+	<style>
+  body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  body.loaded {
+    opacity: 1;
+  }
+</style>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // Add the 'loaded' class to the body when the DOM is fully loaded
+    document.body.classList.add("loaded");
+  });
+</script>
 <style id="wp-block-group-inline-css">
 .wp-block-group{box-sizing:border-box}
 </style>
